@@ -1,12 +1,18 @@
 # FlixRecs — Personalized Recommendation Engine
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.104%2B-red)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3%2B-orange)
+![FAISS](https://img.shields.io/badge/FAISS-Index-orange)
+
 End-to-end movie/show recommendation system with collaborative filtering and neural ranking for streaming platforms.
 
 ## What It Does
 - SVD matrix factorization on MovieLens 1M for collaborative filtering baseline
 - Two-tower neural recommender: separate user and item encoder towers
 - Real-time ranking with learned relevance scores
-- FastAPI serving: /recommend/\{user_id\}, /similar/\{movie_id\}
+- FastAPI serving: `/recommend/{user_id}`, `/similar/{movie_id}`
 - Evaluation: RMSE, HitRate@K, NDCG@K, Diversity
 
 ## Results (MovieLens 1M)
